@@ -5,9 +5,9 @@ import Routes from './utils/Routes';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-    <Routes/>
-      </header>
+
+        <Routes/>
+
     </div>
   );
 }
