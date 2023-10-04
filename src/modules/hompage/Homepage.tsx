@@ -109,11 +109,9 @@ const Homepage = () => {
 
     return (
         <div style={{ backgroundColor: "#000", minHeight: "100vh" }}>
-            <AppLayout
+            <AppLayout 
                 sx={{
-                    color: "#2A575F"
-                }}
-            >
+                    color: "#2A575F" }}>
                 <canvas
                     id="raceCanvas"
                     width={1200}
@@ -121,7 +119,7 @@ const Homepage = () => {
                     style={{ display: "block" }}
                 ></canvas>
                 <Stack spacing={2}>
-                    <div style={textStyle}>Code F1</div>
+                    <div style={textStyle}>Code F(x)</div>
                     <PlayButton/>
                 </Stack>
             </AppLayout>
