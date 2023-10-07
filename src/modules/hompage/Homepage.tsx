@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { AppLayout } from "../../components/containers/AppLayout";
 import whiteCarSvg from "./images/white.svg";
 import blackCarSvg from "./images/black.svg";
 import PlayButton from "./components/PlayButton";
@@ -7,11 +6,12 @@ import Stack from "@mui/material/Stack";
 
 
 
-const textStyle = {
+const textStyle: React.CSSProperties = {
     WebkitFontSmoothing: 'antialiased',
     color: 'white',
     fontFamily: 'Audiowide',
     fontSize: '3rem',
+    textAlign: "center"
 };
 
 const Homepage = () => {
@@ -104,26 +104,23 @@ const Homepage = () => {
         }
 
         gameLoop(); // Start the game loop
-    
+
     }, []);
 
     return (
-        <div style={{ backgroundColor: "#000", minHeight: "100vh" }}>
-            <AppLayout 
-                sx={{
-                    color: "#2A575F" }}>
-                <canvas
-                    id="raceCanvas"
-                    width={1200}
-                    height={400}
-                    style={{ display: "block" }}
-                ></canvas>
-                <Stack spacing={2}>
-                    <div style={textStyle}>Code F(x)</div>
-                    <PlayButton/>
-                </Stack>
-            </AppLayout>
-        </div>
+        <>
+            <canvas
+                id="raceCanvas"
+                width={1200}
+                height={400}
+                style={{ display: "block" }}
+            ></canvas>
+            <Stack spacing={2}>
+                <div style={textStyle}>Code F(x)</div>
+                <PlayButton />
+            </Stack>
+
+        </>
     );
 };
 

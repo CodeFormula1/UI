@@ -17,3 +17,14 @@ code {
 .homepage-container {
   background-color: black;
 }
+
+
+/* Default fill color */
+:root {
+  --fill-color: #000000; /* Set the default fill color */
+}
+
+/* Change fill color on hover */
+.StyledButton:hover {
+  --fill-color: #FF5733; /* Set the hover fill color */
+}

@@ -11,6 +11,8 @@ interface RaceButtonProps {
   imageHeight?: number;
 }
 
+const hoverColor = "#FF5733";
+
 const StyledButton = styled(Button)(({ theme }) => ({
   background: "transparent",
   border: "none",
@@ -18,6 +20,8 @@ const StyledButton = styled(Button)(({ theme }) => ({
   padding: 0,
   "&:hover": {
     backgroundColor: "transparent",
+    transform: "scale(1.1)", 
+    "--fill-color": hoverColor,
   },
   "&:active": {
     backgroundColor: "transparent",
