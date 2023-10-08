@@ -2,6 +2,7 @@ import React from "react";
 import WECRoutes from "./utils/WECRoutes";
 import Header from "../../components/common/Header";
 import TabComponent from "../../components/common/TabComponent";
+import { Stack } from "@mui/material";
 
 
 const tabs = [{ label: "Races", path: "/wec/races" }, { label: "Standings", path: "/wec/standings" }];
@@ -9,10 +10,13 @@ const tabs = [{ label: "Races", path: "/wec/races" }, { label: "Standings", path
 const Homepage = () => {
 
     return (
+
         <>
             <Header />
-            <TabComponent tabs={tabs} />
-            <WECRoutes />
+  
+                <TabComponent tabs={tabs} />
+                <WECRoutes />
+       
         </>
     );
 };

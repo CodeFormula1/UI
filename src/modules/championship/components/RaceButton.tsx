@@ -21,7 +21,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
   "&:hover": {
     backgroundColor: "transparent",
     transform: "scale(1.1)", 
-    "--fill-color": hoverColor,
+    "--fill-color": hoverColor
   },
   "&:active": {
     backgroundColor: "transparent",
