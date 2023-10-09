@@ -20,19 +20,19 @@ const dottedLineStyle: React.CSSProperties = {
 const races = [
     {
         image: BahrainTrack,
-        route: "/wec",
+        route: "/wec/models",
         label: "BAHRAIN",
         active: true
     },
     {
         image: BahrainTrack,
-        route: "/wec",
+        route: "/models",
         label: "JAPAN",
         active: false
     },
     {
         image: BahrainTrack,
-        route: "/wec",
+        route: "/models",
         label: "ITALY",
         active: false
     }

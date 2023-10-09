@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-const WECRoutes = () => {
+const F1Routes = () => {
   return (
     <Routes>
       {/* Define nested routes here as needed */}
@@ -9,4 +9,4 @@ const WECRoutes = () => {
   );
 };
 
-export default WECRoutes;
+export default F1Routes;
